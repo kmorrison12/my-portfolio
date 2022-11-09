@@ -31,6 +31,11 @@
   font-size: 14pt;
 }
 
+/* change default hyperlink color */
+.header a {
+  color: var(--dark-red);
+}
+
 /* styling while hovering over nav links */
 .header a:hover {
   font-style: italic;
