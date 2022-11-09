@@ -1,0 +1,220 @@
+:root {
+  --tan: rgb(213, 205, 200);
+  --dark-red: rgb(103, 25, 55);
+  --navy: rgb(6, 21, 58);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.header {
+  padding-top: 5px;
+  padding-bottom: 20px;
+  height: 235px;
+  background-color: var(--tan);
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header nav ul ol {
+  color: var(--dark-red);
+  padding-left: 10px;
+  font-size: 14pt;
+}
+
+/* styling while hovering over nav links */
+.header a:hover {
+  font-style: italic;
+}
+
+/* styling for visited nav links */
+.header a:visited {
+  color: var(--dark-red);
+}
+
+.header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50pt;
+  font-style: italic;
+  color: var(--dark-red);
+}
+
+.header h1 #header-img {
+  height: 190px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.about-me,
+.work,
+.contact-me {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  color: var(--dark-red);
+  width: 100%;
+}
+
+/* align section titles on the left third of screen with 
+border on right to separate section title and content */
+.about-me h1,
+.work h1,
+.contact-me h1 {
+  text-align: right;
+  font-size: 20pt;
+  color: var(--navy);
+  width: 33%;
+  padding-right: 20px;
+  border-right: 2px solid var(--navy);
+}
+
+.about-me div {
+  font-size: 14pt;
+  color: var(--navy);
+  width: 66%;
+  padding-left: 15px;
+}
+
+/* containers for links to projects */
+.project {
+  background-color: var(--dark-red);
+  margin: 5px 0px 5px 15px;
+  padding: 5px;
+  display: inline-block;
+  height: 60px;
+  width: 25%;
+}
+
+#one {
+  width: 80%;
+}
+
+/* change color of project container when hovering */
+.project:hover {
+  background-color: var(--navy);
+}
+
+/* change color of links to projects */
+.work a {
+  color: var(--tan);
+}
+
+.contact-me {
+  margin-bottom: 20px;
+}
+
+.contact-me div {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: 14pt;
+  width: 66%;
+  padding-left: 15px;
+}
+
+/* style links when hovering */
+.contact-me a:hover {
+  font-style: italic;
+}
+
+/* smae styling for links before and are visiting */
+.contact-me a,
+.contact-me a:visited {
+  color: var(--dark-red);
+}
+
+.footer {
+  background-color: var(--dark-red);
+  color: var(--tan);
+  text-align: center;
+  height: 90px;
+  padding-top: 10px;
+  font-size: 10pt;
+  font-style: italic;
+}
+
+.footer img {
+  height: 50px;
+  margin-top: 10px;
+}
+
+/* media query for responsive content */
+
+@media screen and (max-width: 1004px) {
+  .project {
+    display: block;
+    width: 100%;
+    padding-right: 200px;
+  }
+  
+  #one {
+      width: 100%;
+      padding-right: 200px;
+  }
+}
+
+@media screen and (max-width: 704px) {
+  .project {
+    display: block;
+    width: 100%;
+    padding-right: 50px;
+  }
+
+  #one {
+    width: 100%;
+    padding-right: 50px;
+  }
+
+  .contact-me div {
+    gap: 0px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .header h1 {
+    font-size: 40pt;
+  }
+
+  .header h1 #header-img {
+    height: 140px;
+  }
+
+  .header {
+    height: 190px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header h1 {
+    font-size: 30pt;
+  }
+
+  .header h1 #header-img {
+    height: 100px;
+  }
+
+  .header {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 408px) {
+  .project, #one {
+    padding-right: 20px;
+  }
+
+  .contact-me div {
+    display: block;
+  }
+}
