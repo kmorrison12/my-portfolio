@@ -98,11 +98,21 @@ border on right to separate section title and content */
   padding: 5px;
   display: inline-block;
   height: 60px;
-  width: 25%;
+  width: 35%;
 }
 
 #one {
-  width: 80%;
+  width: 72%;
+  background-image: url("./slashed-and-smashed-horizontal-1.png");
+  background-size: 50%;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 125px;
+}
+
+#one:hover {
+  background-color: grey;
 }
 
 /* change color of project container when hovering */
@@ -111,7 +121,8 @@ border on right to separate section title and content */
 }
 
 /* change color of links to projects */
-.work a {
+.work a, 
+.work p {
   color: var(--tan);
 }
 
