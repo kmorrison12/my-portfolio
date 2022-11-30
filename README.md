@@ -20,6 +20,6 @@ Given I need to sample a potential employee's previous work
 
 - When I resize the page or view the site on various screens and devices, I am presented with a responsive layout that adapts to my viewport
 
-[Portfolio Link]
+[Portfolio Link] https://kmorrison12.github.io/my-portfolio/
 
 ![Portfolio Screenshot](./assets/deployed-portfolio.png)
