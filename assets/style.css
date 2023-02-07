@@ -111,6 +111,14 @@ border on right to separate section title and content */
   height: 125px;
 }
 
+#two {
+  background-image: url("./hydro-home-logo.png");
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(7, 89, 133)
+}
+
 #one:hover {
   background-color: grey;
 }
